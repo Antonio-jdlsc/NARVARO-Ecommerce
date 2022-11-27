@@ -1,0 +1,418 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+
+.header__navigation{
+    position: fixed;
+    top:0; 
+    left:0;
+    right:0;
+    background:black;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 3rem;
+    color:whitesmoke;
+    font-weight: bolder;
+}
+
+.navbar__items{
+    display: flex;
+}
+.navbar__link{
+    font-size: 1.6rem;
+    padding:0 1.5rem;
+    color:whitesmoke;
+}
+
+.navbar__link:hover{
+    color:#c7e0f4;
+    font-size: 1.9rem;
+    text-decoration: underline;
+}
+
+
+
+
+.fa-bars{
+    font-size: 2.5rem;
+    color:white;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url('./Images/Diseño\ sin\ título.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.details__content{
+    max-width: 50rem;
+}
+
+
+
+.details__content h3{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 5.8rem;
+    color:black;
+}
+
+.details__content span{
+    font-size: 2.5rem;
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+
+
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.main{
+    text-align: center;
+    font-size: 3rem;
+    color:whitesmoke;
+    padding:1rem;
+    margin:2rem 0;
+    background-color: black;
+}
+
+.box{
+    flex:1 1 30rem;
+    box-shadow: 0 .5rem .3rem black;
+    border-radius: .5rem;
+    border:.1rem solid grey;
+    position: relative;    
+}
+
+.discount{
+    position: absolute;
+    top:1rem; 
+    left:1rem;
+    padding:.7rem 1rem;
+    font-size: 2rem;
+    color:whitesmoke;
+    background-color: black;
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow:hidden;
+}
+
+.image img{
+    height:25rem;
+}
+
+.box:hover .image img{
+    transform: scale(1.1);
+}
+
+.icons{
+    position: absolute;
+    bottom:-7rem; left:0; right:0;
+    display: flex;
+}
+
+.box:hover .image .icons{
+    bottom:0;
+}
+
+.icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width:50%;
+    background-color: black;
+    color:whitesmoke;
+}
+
+.cart-btn{
+    border-left: .1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width:100%;
+}
+
+.icons a:hover{
+    background-color:#333;
+}
+
+.content{
+    padding:2rem;
+    text-align: center;
+}
+
+.content h3{
+    font-size: 2.5rem;
+    color:#333;
+}
+
+.price{
+    font-size: 2.5rem;
+    color:var(--pink);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.price span{
+    font-size: 1.5rem;
+    color:#999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+.blog{
+    background: url('./Images/cover.jpg') no-repeat;
+    min-width: 100vh;
+    min-height: 75vh;
+    margin-top: 5rem;
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+}
+
+.blog__texts{
+    display: flex;
+    max-width: 80rem;
+    gap: .6rem;
+    align-items: baseline;
+}
+
+.blog__main{
+    font-size: 2.8rem;
+    background-color: black;
+    color: whitesmoke;
+    box-sizing: content-box;
+}
+
+.blog__span{
+    font-size: 2rem;
+    background-color: wheat;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.blog__email{
+    display: flex;
+    gap: 2rem;
+    margin-top: 35rem;
+    max-width: 50rem;
+
+}
+
+.blog__input{
+    border-radius: 5px;
+    width: 80%;
+    height: 4rem;
+    padding-left: 1rem;
+    font-weight: bolder;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.blog__btn{
+    border-radius: 5px;
+    width: 20%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.blog__btn:hover{
+    cursor: pointer;
+    font-size: 1.1rem;
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+
+
+
+
+
+.footer{
+    padding-top: 10rem;
+}
+
+.footer__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.footer__box{
+    flex:1 1 25rem;
+}
+
+.footer__box h3{
+    color:black;
+    font-size: 2.5rem;
+    padding:1rem 0;
+}
+
+.footer__box a{
+    display: block;
+    color:black;
+    font-size: 1.5rem;
+    padding:1rem 0;
+}
+
+.footer__box a:hover{
+    color:#c7e0f4;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+@media (max-width:991px){
+    
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    .details{
+        background-position: left;
+    }
+    .blog{
+        padding:2rem;
+        background-position: right;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .fa-bars{
+        display: block;
+    }
+
+    .navbar{
+        position:absolute;
+        top:100%; 
+        left:0; 
+        right:0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .blog__texts{
+        display: block;
+        max-width: 30rem;
+
+    }
+
+    .navbar__links{
+        margin:1.5rem;
+        padding:1.5rem;
+        background:#fff;
+        border:.1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+    .details__content h3{
+        font-size: 5rem;
+    }
+
+    .details__content span{
+        font-size: 2rem;
+    }
+
+    .blog__main{
+        font-size: 2rem
+    }
+
+    .blog__span{
+        font-weight: 2rem;
+    }
+    .blog__texts{
+        display: block;
+        max-width: 30rem;
+
+    }
+}
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+
+    .main{
+        font-size: 3rem;
+    }
+
+    .blog__texts{
+        display: block;
+        max-width: 30rem;
+    }
+    .blog__email{
+        max-width: 20rem;
+    }
+
+}
